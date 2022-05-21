@@ -1,0 +1,93 @@
+/* GLOBAL */
+:root {
+  ----Fonts: "Open-sans", sans-serif;
+  --2Fonts: "Exo", sans-serif;
+  --primary: #c4c4c4;
+  --green: #4cc986;
+  --white: #ffffff;
+  --box: #303030;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/BG.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+h4 {
+  font-size: var(--2Fonts);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26.58px;
+  text-align: center;
+  color: var(--white);
+  color: white;
+}
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.width-input {
+  width: 362px;
+  height: 47px;
+  border-radius: 4px;
+}
+
+.logo {
+  padding-top: 44.27px;
+  padding-left: 53.23px;
+}
+
+.logo__img {
+  width: 293.54px;
+  height: 37.46px;
+  margin-top: 14.27px;
+  margin-left: 14.23px;
+}
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 82px;
+  padding-right: 100px;
+}
+.content__box {
+  width: 462px;
+  height: 702px;
+  padding: 40px 50px;
+  background: #303030;
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittleLogin {
+  width: 362px;
+  height: 27px;
+  vertical-align: top;
+}
+.pLogin {
+  width: 362px;
+  height: 28px;
+  vertical-align: middle;
+  font-family: var(--2Fonts);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 21.58px;
+  text-align: center;
+  color: var(--white);
+}
