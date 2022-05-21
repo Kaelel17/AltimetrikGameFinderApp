@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Open+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
@@ -75,15 +75,25 @@
             <p class="pLogin">Log in to find the games you're looking for!</p>
           </div>
           <form class="formLogin">
-            <label for="email"></label>
-            <input class="center" type="email" placeholder="Email" />
-
-            <label for="password"></label>
-            <input class="center" type="password" placeholder="Password" />
-            <input class="center" type="checkbox" value="checkbox" />
+            <div class="input-space">
+              <label for="email"></label>
+              <input class="form__input" type="email" placeholder="Email" />
+            </div>
             <div>
-              <label for="checkbox">Remember me</label>
-              <a href="#">Forgot password?</a>
+              <label for="password"></label>
+              <input
+                class="form__input"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="form__checkbox">
+              <div>
+                <input class="checkbox" type="checkbox" value="checkbox" />
+                <label class="remember-me" for="checkbox">Remember me</label>
+              </div>
+              <a class="password-lost" href="#">Forgot password?</a>
             </div>
             <input
               class="button"

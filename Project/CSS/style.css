@@ -1,6 +1,6 @@
 /* GLOBAL */
 :root {
-  ----Fonts: "Open-sans", sans-serif;
+  ----Fonts: "Open Sans", sans-serif;
   --2Fonts: "Exo", sans-serif;
   --primary: #c4c4c4;
   --green: #4cc986;
@@ -34,6 +34,17 @@ h4 {
   color: var(--white);
   color: white;
 }
+.button {
+  width: 362px;
+  height: 47px;
+  background: var(--green);
+  font-family: var(--2Fonts);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--white);
+}
 .center {
   text-align: center;
   display: flex;
@@ -57,10 +68,10 @@ h4 {
   margin-left: 14.23px;
 }
 .content {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 82px;
-  padding-right: 100px;
+  position: absolute;
+  top: 178px;
+  left: 932px;
+  translate: -178px, -932px;
 }
 .content__box {
   width: 462px;
@@ -89,5 +100,52 @@ h4 {
   font-style: normal;
   line-height: 21.58px;
   text-align: center;
+  align-items: left;
   color: var(--white);
+}
+.formLogin {
+  padding-top: 32px;
+}
+.form__input {
+  display: flex;
+
+  width: 362px;
+  height: 47px;
+}
+.input-space {
+  padding-bottom: 5px;
+}
+.form__checkbox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+.remember-me {
+  align-items: center;
+  width: 100.64px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: var(--2Fonts);
+  font-style: normal;
+  padding-left: 16px;
+  color: var(--white);
+}
+.password-lost {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: f;
+  height: 19px;
+  font-family: var(----Fonts);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--green);
 }
