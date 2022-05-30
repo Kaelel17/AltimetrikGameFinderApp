@@ -4,7 +4,7 @@
 
   /* ----primary---- */
   --primary: #5fe19b;
-  --prmimary2: #36b972;
+  --primary2: #36b972;
   --primary3: #067b3c;
   --primary4: #4cc986;
 
@@ -16,15 +16,15 @@
   --secondary5: #ffdc22;
 
   /* ----neutrals---- */
-  --neutrals: #141414;
-  --neutrals2: #303030;
-  --neutrals3: #515151;
-  --neutrals4: #939393;
-  --neutrals5: #c4c4c4;
-  --neutrals6: #d8d8d8;
-  --neutrals7: #e7e7e7;
-  --neutrals8: #f0f0f0;
-  --neutrals9: #ffffff;
+  --neutral: #141414;
+  --neutral2: #303030;
+  --neutral3: #515151;
+  --neutral4: #939393;
+  --neutral5: #c4c4c4;
+  --neutral6: #d8d8d8;
+  --neutral7: #e7e7e7;
+  --neutral8: #f0f0f0;
+  --neutral9: #ffffff;
 
   /* -----FONTS----- */
   --font-family: "Exo", sans-serif;
@@ -48,184 +48,180 @@ body {
 }
 
 /* mobile */
-@media (min-width: 320px) {
-  /* header */
-  .header {
-    display: flex;
-    justify-content: center;
-    padding-top: 3.3rem;
-    padding-bottom: 1.9rem;
-  }
-  .logo {
-    width: 19.4rem;
-    height: 2.5rem;
-  }
-  /* box */
-  .content {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1.2rem;
-    width: 100%;
-    padding-bottom: 3.4rem;
-  }
-  .contentBox {
-    color: var(--neutrals9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* ---Title Section--- */
-  h4 {
-    font-family: var(--font-family);
-    color: var(--neutrals9);
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    width: 28.5rem;
-    height: 2.7rem;
-    text-align: center;
-    margin-top: 2.2rem;
-    margin-bottom: 1.6rem;
-  }
-  .pLogin {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    width: 28rem;
-    height: 2.8rem;
-  }
-  /* Form Log in */
-  .formInput {
-    width: 28.8rem;
-    height: 4.7rem;
-    border-radius: 0.4rem;
-    border: 0;
-  }
-  .formInput__icon {
-    display: flex;
-  }
-  .inputArea {
-    padding-top: 3.5rem;
-    padding-bottom: 1.6rem;
-  }
-  /*Remember and Register  */
-  .formSpace {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1.6rem;
-    padding-bottom: 3rem;
-  }
-  .formCenter {
-    display: flex;
-    justify-content: center;
-    padding-top: 3.2rem;
-    padding-bottom: 0rem;
-    height: 1.9rem;
-  }
-  .textCenter {
-    font-family: var(--font-family);
-    color: var(--neutrals9);
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    display: flex;
-    align-items: center;
-    padding-right: 0.5rem;
-    width: 12.8rem;
-  }
-  .registerNow {
-    width: 8.8rem;
-    height: 1.9rem;
-  }
-  .checkbox {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.4rem;
-    margin: 0 auto;
-  }
-  .greenLink {
-    color: var(--primary);
-    font-family: var(--font-family2);
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    text-align: right;
-    text-decoration: none;
-  }
-  /* ---Log in button--- */
-  .buttonLogin {
-    width: 28.8rem;
-    height: 4.7rem;
-    font-family: var(--font-family2);
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    border-radius: 0.6rem;
-    border: 0;
-    text-align: center;
-    color: var(--neutrals9);
-    background-color: var(--primary4);
-  }
-  /* ---Line--- */
-  .line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    padding: 1.6rem 0rem;
-  }
-  .or {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5.3rem;
-    height: 1.9rem;
-    font-family: var(--font-family2);
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .line__2 {
-    width: 11.7rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.5);
-  }
-  /* ---Login Nav-- */
-  .formNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .loginNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.2rem solid var(--neutrals9);
-    border-radius: 0.6rem;
-    margin-bottom: 1.6rem;
-    width: 28.8rem;
-    height: 4.7rem;
-  }
-  .buttonNav {
-    color: var(--neutrals9);
-    font-family: var(--font-family);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    text-align: center;
-    padding-left: 0.6rem;
-    width: 14.9rem;
-    height: 1.9rem;
-  }
-  .buttonNav__padding {
-    margin-bottom: 1.6rem;
-  }
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.3rem;
+  padding-bottom: 1.9rem;
+}
+.logo {
+  width: 19.4rem;
+  height: 2.5rem;
+}
+/* box */
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.2rem;
+  width: 100%;
+  padding-bottom: 3.4rem;
+}
+.contentBox {
+  color: var(--neutral9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ---Title Section--- */
+h4 {
+  font-family: var(--font-family);
+  color: var(--neutral9);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  width: 28.5rem;
+  height: 2.7rem;
+  text-align: center;
+  margin-top: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+.pLogin {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  width: 28rem;
+  height: 2.8rem;
+}
+/* Form Log in */
+.formInput {
+  width: 28.8rem;
+  height: 4.7rem;
+  border-radius: 0.4rem;
+  border: 0;
+}
+.formInput__icon {
+  display: flex;
+}
+.inputArea {
+  padding-top: 3.5rem;
+  padding-bottom: 1.6rem;
+}
+/*Remember and Register  */
+.formSpace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-bottom: 3rem;
+}
+.formCenter {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.2rem;
+  padding-bottom: 0rem;
+  height: 1.9rem;
+}
+.textCenter {
+  font-family: var(--font-family);
+  color: var(--neutral9);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  width: 12.8rem;
+}
+.registerNow {
+  width: 8.8rem;
+  height: 1.9rem;
+}
+.checkbox {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin: 0 auto;
+}
+.greenLink {
+  color: var(--primary);
+  font-family: var(--font-family2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: right;
+  text-decoration: none;
+}
+/* ---Log in button--- */
+.buttonLogin {
+  width: 28.8rem;
+  height: 4.7rem;
+  font-family: var(--font-family2);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  border-radius: 0.6rem;
+  border: 0;
+  text-align: center;
+  color: var(--neutral9);
+  background-color: var(--primary4);
+}
+/* ---Line--- */
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  padding: 1.6rem 0rem;
+}
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.3rem;
+  height: 1.9rem;
+  font-family: var(--font-family2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.line__2 {
+  width: 11.7rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+}
+/* ---Login Nav-- */
+.formNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid var(--neutral9);
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+  width: 28.8rem;
+  height: 4.7rem;
+}
+.buttonNav {
+  color: var(--neutral9);
+  font-family: var(--font-family);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+  padding-left: 0.6rem;
+  width: 14.9rem;
+  height: 1.9rem;
 }
 
 /* ------TABLET------ */
@@ -243,8 +239,34 @@ body {
     padding-top: 3.8rem;
     padding-bottom: 10.2rem;
   }
+  .arrow {
+    display: flex;
+    justify-content: space-between;
+  }
+  .arrowLeft,
+  .arrowRight {
+    margin-top: 0 auto;
+    padding: 0;
+    width: 4.3rem;
+    height: 4.3rem;
+    background-color: var(--neutral3);
+    border-radius: 50%;
+  }
+  .arrowLeft {
+    background-image: url(../img/arrow\ left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 32.2rem;
+    margin-left: 2.4rem;
+  }
 
-  /* box */
+  .arrowRight {
+    background-image: url(../img/arrow\ right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 32.2rem;
+    margin-right: 2.4rem;
+  }
 
   .content {
     background-color: rgba(0, 0, 0, 0.5);
@@ -257,23 +279,59 @@ body {
     justify-content: center;
   }
   .contentBox {
-    color: var(--neutrals9);
+    color: var(--neutral9);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 36.2rem;
   }
-  /* Title section */
+  /* Title-section */
   h4,
   .pLogin {
     width: 36.2rem;
   }
-  /* Form Log in */
+  /* Form-Log-in */
   .formInput,
   .buttonLogin {
     width: 36.2rem;
     height: 4.7rem;
     border-radius: 0.4rem;
     border: 0;
+  }
+  .a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8.5rem;
+  }
+  .pageNav {
+    width: 12rem;
+    height: 2.7rem;
+    border-radius: 1.8rem;
+    background-color: var(--neutral3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navPoint {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--neutral9);
+    opacity: 0.25;
+    border-radius: 50%;
+  }
+}
+/* ----DESKTOP---- */
+@media screen and (min-width: 1062px) {
+  /* HEADER */
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4.4rem 0rem 9.6rem 5.3rem;
+  }
+
+  .content {
+    margin-right: 2.5rem;
   }
 }
