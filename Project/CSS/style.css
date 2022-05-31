@@ -298,6 +298,10 @@ h4 {
     border-radius: 0.4rem;
     border: 0;
   }
+  .loginNav {
+    width: 36.2rem;
+    height: 4.7rem;
+  }
   .a {
     display: flex;
     align-items: center;
@@ -333,5 +337,13 @@ h4 {
 
   .content {
     margin-right: 2.5rem;
+  }
+  .a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.5rem;
+    margin-bottom: 4rem;
+    padding-top: 0rem;
   }
 }
