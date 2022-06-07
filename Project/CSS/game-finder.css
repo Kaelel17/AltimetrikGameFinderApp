@@ -125,6 +125,12 @@ h1 {
   font-size: 14px;
   line-height: 19px;
 }
+/* Aside */
+.aside {
+  width: 0%;
+  height: 0%;
+  font-size: 0%;
+}
 /* Section */
 .rectangle {
   width: 28.8rem;
@@ -186,13 +192,13 @@ h1 {
     margin: 0%;
   }
   /* Section */
+
   .article__title {
     width: 40rem;
     height: 6.5rem;
     font-size: 4.8rem;
     line-height: 6.3rem;
     margin-top: 3.2rem;
-    margin-left: 2.4rem;
     margin-bottom: 0.2rem;
   }
   .article__paragraph {
@@ -200,17 +206,58 @@ h1 {
     height: 2.4rem;
     font-size: 1.8rem;
     line-height: 2.3rem;
+    margin: 0%;
+  }
+  .prueba {
+    display: flex;
+  }
+  /* aside */
+  /* .aside {
+    width: 40rem;
+    font-size: 100%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+  /* .aside__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  .home {
+    width: 5.5rem;
+    height: 2.7rem;
+    color: var(--primary);
+    margin-bottom: 1.4rem;
+  }
+  .reviews {
+    width: 7.7rem;
+    height: 2.7rem;
+  }
+  .new-realse {
+    width: auto;
+    height: 2.7rem;
+  } */
+  /* end aside */
+  .text__box {
+    margin-left: 4rem;
+    margin-bottom: 3.1rem;
   }
   .box__rectangle {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .rectangle {
     width: 35.1rem;
     height: 31.4rem;
-    margin: 1.6rem;
     background-color: var(--neutral2);
+    margin: 0.9rem;
     display: flex;
     align-items: center;
+    border-radius: 1.2rem;
   }
 }

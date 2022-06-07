@@ -33,10 +33,9 @@
 /* Global */
 html {
   font-size: 62.5%;
-  font-family: var(--font-family);
+  font-family: var(--fontMain);
   box-sizing: border-box;
   padding: 0;
-  width: 100%;
 }
 body {
   margin: 0;
@@ -67,7 +66,7 @@ body {
   width: 100%;
   padding-bottom: 3.4rem;
 }
-.content__box {
+.contentBox {
   color: var(--neutral9);
   display: flex;
   flex-direction: column;
@@ -86,7 +85,7 @@ h4 {
   margin-top: 2.2rem;
   margin-bottom: 1.6rem;
 }
-.paragraph__login {
+.pLogin {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -99,50 +98,49 @@ h4 {
   height: 2.8rem;
 }
 /* Form Log in */
-.input {
+.formInput {
   width: 28.8rem;
   height: 4.7rem;
   border-radius: 0.4rem;
-  border: none;
-}
-.input::placeholder {
-  padding-left: 1.2rem;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: var(--neutral4);
-}
-
-.input__password {
-  background-image: url(../img/eye.png);
-  background-repeat: no-repeat;
-  background-position: 25.7rem 50%;
+  border: 0;
 }
 .formInput__icon {
   display: flex;
 }
-.form__input {
-  padding-top: 3.5rem;
-  padding-bottom: 1.6rem;
+.inputArea {
+  margin-top: 3.5rem;
+  margin-bottom: 1.6rem;
+}
+.inputWrapper {
+  position: relative;
+  width: 271px;
+}
+.inputIcon {
+  color: var(--primary2);
+  position: absolute;
+  width: 2.1rem;
+  height: 1.6rem;
+  left: 26rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*Remember and Register  */
-.form__space {
+.formSpace {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1.6rem;
   padding-bottom: 3rem;
 }
-.form__center {
+.formCenter {
   display: flex;
   justify-content: center;
   padding-top: 3.2rem;
   padding-bottom: 0rem;
   height: 1.9rem;
 }
-.text__center {
+.textCenter {
   font-family: var(--font-family);
   color: var(--neutral9);
   font-weight: 400;
@@ -153,7 +151,7 @@ h4 {
   padding-right: 0.5rem;
   width: 12.8rem;
 }
-.register__now {
+.registerNow {
   width: 8.8rem;
   height: 1.9rem;
 }
@@ -163,7 +161,7 @@ h4 {
   border-radius: 0.4rem;
   margin: 0 auto;
 }
-.green__link {
+.greenLink {
   color: var(--primary);
   font-family: var(--font-family2);
   font-weight: 400;
@@ -173,7 +171,7 @@ h4 {
   text-decoration: none;
 }
 /* ---Log in button--- */
-.button__login {
+.buttonLogin {
   width: 28.8rem;
   height: 4.7rem;
   font-family: var(--font-family2);
@@ -211,12 +209,12 @@ h4 {
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
 }
 /* ---Login Nav-- */
-.form__nav {
+.formNav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.login__nav {
+.loginNav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +224,7 @@ h4 {
   width: 28.8rem;
   height: 4.7rem;
 }
-.button__nav {
+.buttonNav {
   color: var(--neutral9);
   font-family: var(--font-family);
   text-decoration: none;
@@ -258,8 +256,8 @@ h4 {
     display: flex;
     justify-content: space-between;
   }
-  .arrow__left,
-  .arrow__right {
+  .arrowLeft,
+  .arrowRight {
     margin-top: 0 auto;
     padding: 0;
     width: 4.3rem;
@@ -267,7 +265,7 @@ h4 {
     background-color: var(--neutral3);
     border-radius: 50%;
   }
-  .arrow__left {
+  .arrowLeft {
     background-image: url(../img/arrow\ left.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -275,7 +273,7 @@ h4 {
     margin-left: 2.4rem;
   }
 
-  .arrow__right {
+  .arrowRight {
     background-image: url(../img/arrow\ right.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -293,7 +291,7 @@ h4 {
     display: flex;
     justify-content: center;
   }
-  .content__box {
+  .contentBox {
     color: var(--neutral9);
     display: flex;
     flex-direction: column;
@@ -301,36 +299,37 @@ h4 {
     width: 36.2rem;
   }
   /* Title-section */
+  h4 {
+    margin-top: 4rem;
+  }
   h4,
-  .paragraph__login {
+  .pLogin {
     width: 36.2rem;
   }
   /* Form-Log-in */
-  .input,
-  .button__login {
+  .formInput,
+  .buttonLogin {
     width: 36.2rem;
     height: 4.7rem;
     border-radius: 0.4rem;
     border: 0;
   }
-  .input::placeholder {
-    padding-left: 1.6rem;
+  .inputArea {
+    margin-top: 3.2rem;
   }
-  .input__password {
-    background-image: url(../img/eye.png);
-    background-repeat: no-repeat;
-    background-position: 33.1rem 50%;
+  .inputIcon {
+    color: var(--primary2);
+    position: absolute;
+    width: 2.1rem;
+    height: 1.6rem;
+    left: 33.7rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  .login__nav {
+  /* end form login */
+  .loginNav {
     width: 36.2rem;
     height: 4.7rem;
-  }
-  .button__nav {
-    width: 17.2rem;
-    height: 2.4rem;
-    padding-left: 2rem;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
   }
   .a {
     display: flex;
@@ -338,7 +337,7 @@ h4 {
     justify-content: center;
     padding-top: 8.5rem;
   }
-  .page__nav {
+  .pageNav {
     width: 12rem;
     height: 2.7rem;
     border-radius: 1.8rem;
@@ -347,7 +346,7 @@ h4 {
     align-items: center;
     justify-content: space-evenly;
   }
-  .nav__point {
+  .navPoint {
     width: 0.7rem;
     height: 0.7rem;
     background-color: var(--neutral9);
@@ -372,9 +371,8 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8.5rem;
-    margin-bottom: 3.2rem;
+    margin-top: 11.5rem;
+    margin-bottom: 4rem;
     padding-top: 0rem;
   }
 }
-/* Inside \ Game finder */

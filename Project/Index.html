@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
     <main>
@@ -69,50 +70,63 @@
 
       <div class="arrow">
         <!-- arrow-left -->
-        <a href="#" class="arrow__left"></a>
+        <a href="#" class="arrowLeft"></a>
         <!-- end-arrow-left -->
 
         <!-- box-login -->
         <section class="content">
           <!-- Title-Section -->
-          <div class="content__box">
+          <div class="contentBox">
             <div>
               <h4>Welcome Log in or register</h4>
-              <p class="paragraph__login">
-                Log in to find the games you're looking for!
-              </p>
+              <p class="pLogin">Log in to find the games you're looking for!</p>
             </div>
             <!-- End-title-Section -->
 
             <!-- Login-Form -->
             <form>
-              <div class="form__input">
+              <div class="inputArea">
                 <label for="email"></label>
-                <input class="input" type="email" placeholder="Email" />
+                <input class="formInput" type="email" placeholder="Email" />
               </div>
-              <div>
+              <div class="inputWrapper">
                 <label for="password"></label>
 
                 <input
-                  class="input input__password"
+                  class="formInput"
                   type="password"
                   placeholder="Password"
                 />
+                <svg
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inputIcon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.30105 11.577C3.77805 10.268 2.69105 8.773 2.18005 8C2.69005 7.227 3.77805 5.732 5.30105 4.423C6.87405 3.072 8.81605 2 11.0001 2C13.1841 2 15.1261 3.072 16.6991 4.423C18.2221 5.732 19.3091 7.227 19.8201 8C19.3101 8.773 18.2221 10.268 16.6991 11.577C15.1261 12.928 13.1841 14 11.0001 14C8.81605 14 6.87405 12.928 5.30105 11.577ZM11.0001 0C8.14805 0 5.75705 1.395 3.99805 2.906C2.23305 4.423 1.00805 6.138 0.464053 6.97C0.263086 7.27593 0.156006 7.63397 0.156006 8C0.156006 8.36603 0.263086 8.72407 0.464053 9.03C1.00805 9.862 2.23305 11.577 3.99805 13.094C5.75805 14.605 8.14805 16 11.0001 16C13.8521 16 16.2431 14.605 18.0021 13.094C19.7671 11.577 20.9921 9.862 21.5361 9.03C21.9471 8.402 21.9471 7.599 21.5361 6.97C20.9921 6.138 19.7671 4.423 18.0021 2.906C16.2421 1.395 13.8521 0 11.0001 0ZM9.00005 8C9.00005 7.46957 9.21077 6.96086 9.58584 6.58579C9.96091 6.21071 10.4696 6 11.0001 6C11.5305 6 12.0392 6.21071 12.4143 6.58579C12.7893 6.96086 13.0001 7.46957 13.0001 8C13.0001 8.53043 12.7893 9.03914 12.4143 9.41421C12.0392 9.78929 11.5305 10 11.0001 10C10.4696 10 9.96091 9.78929 9.58584 9.41421C9.21077 9.03914 9.00005 8.53043 9.00005 8ZM11.0001 4C9.93919 4 8.92177 4.42143 8.17163 5.17157C7.42148 5.92172 7.00005 6.93913 7.00005 8C7.00005 9.06087 7.42148 10.0783 8.17163 10.8284C8.92177 11.5786 9.93919 12 11.0001 12C12.0609 12 13.0783 11.5786 13.8285 10.8284C14.5786 10.0783 15.0001 9.06087 15.0001 8C15.0001 6.93913 14.5786 5.92172 13.8285 5.17157C13.0783 4.42143 12.0609 4 11.0001 4Z"
+                    fill="#36B972"
+                  />
+                </svg>
               </div>
 
-              <div class="form__space">
-                <div class="text__center">
+              <div class="formSpace">
+                <div class="textCenter">
                   <input class="checkbox" type="checkbox" value="checkbox" />
                   <label for="checkbox">Remember me</label>
                 </div>
-                <a class="green__link" href="#">Forgot password?</a>
+                <a class="greenLink" href="#">Forgot password?</a>
               </div>
               <!-- End-Login-Form -->
 
               <!-- Button-Log-in -->
               <a href="#">
                 <input
-                  class="button__login"
+                  class="buttonLogin"
                   type="submit"
                   value="Log in"
                   placeholder="Log in"
@@ -122,9 +136,9 @@
               <!-- End-button-Log-in -->
 
               <!-- Register-section -->
-              <div class="form__center form__space">
-                <p class="text__center">Not registered yet?</p>
-                <a class="green__link register__now" href="#">Register now</a>
+              <div class="formCenter formSpace">
+                <p class="textCenter">Not registered yet?</p>
+                <a class="greenLink registerNow" href="#">Register now</a>
               </div>
               <!-- End-Register-Section -->
 
@@ -137,8 +151,8 @@
               <!-- End-Line -->
 
               <!-- Form-Nav -->
-              <nav class="form__nav">
-                <div class="login__nav">
+              <nav class="formNav">
+                <div class="loginNav">
                   <svg
                     width="21"
                     height="20"
@@ -153,9 +167,9 @@
                       fill="white"
                     />
                   </svg>
-                  <a href="#" class="button__nav"> Login with Facebook </a>
+                  <a href="#" class="buttonNav"> Login with Facebook </a>
                 </div>
-                <div class="login__nav">
+                <div class="loginNav">
                   <svg
                     width="21"
                     height="20"
@@ -170,9 +184,9 @@
                       fill="white"
                     />
                   </svg>
-                  <a href="#" class="button__nav">Login whit Twitter </a>
+                  <a href="#" class="buttonNav">Login whit Twitter </a>
                 </div>
-                <div class="login__nav">
+                <div class="loginNav">
                   <svg
                     width="19"
                     height="18"
@@ -187,7 +201,7 @@
                       fill="white"
                     />
                   </svg>
-                  <a href="#" class="button__nav buttonNav__padding"
+                  <a href="#" class="buttonNav buttonNav__padding"
                     >Login whit Google</a
                   >
                 </div>
@@ -198,33 +212,33 @@
         </section>
 
         <!-- arrow right -->
-        <a href="#" class="arrow__right"> </a>
+        <a href="#" class="arrowRight"> </a>
         <!-- end arrow right -->
       </div>
       <!-- end box-login -->
       <nav class="a">
-        <div class="page__nav">
-          <div class="nav__point">
+        <div class="pageNav">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
 
-          <div class="nav__point">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
 
-          <div class="nav__point">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
 
-          <div class="nav__point">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
 
-          <div class="nav__point">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
 
-          <div class="nav__point">
+          <div class="navPoint">
             <a href="#"></a>
           </div>
         </div>
