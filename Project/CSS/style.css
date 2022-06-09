@@ -66,7 +66,7 @@ body {
   width: 100%;
   padding-bottom: 3.4rem;
 }
-.contentBox {
+.content__box {
   color: var(--neutral9);
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@ h4 {
   margin-top: 2.2rem;
   margin-bottom: 1.6rem;
 }
-.pLogin {
+.paragraph__login {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -98,24 +98,22 @@ h4 {
   height: 2.8rem;
 }
 /* Form Log in */
-.formInput {
+.form__input {
   width: 28.8rem;
   height: 4.7rem;
   border-radius: 0.4rem;
   border: 0;
 }
-.formInput__icon {
-  display: flex;
-}
-.inputArea {
+
+.input__area {
   margin-top: 3.5rem;
   margin-bottom: 1.6rem;
 }
-.inputWrapper {
+.input__wrapper {
   position: relative;
   width: 271px;
 }
-.inputIcon {
+.input__icon {
   color: var(--primary2);
   position: absolute;
   width: 2.1rem;
@@ -126,21 +124,21 @@ h4 {
 }
 
 /*Remember and Register  */
-.formSpace {
+.form__space {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1.6rem;
   padding-bottom: 3rem;
 }
-.formCenter {
+.form__center {
   display: flex;
   justify-content: center;
   padding-top: 3.2rem;
   padding-bottom: 0rem;
   height: 1.9rem;
 }
-.textCenter {
+.text__center {
   font-family: var(--font-family);
   color: var(--neutral9);
   font-weight: 400;
@@ -151,7 +149,7 @@ h4 {
   padding-right: 0.5rem;
   width: 12.8rem;
 }
-.registerNow {
+.register__now {
   width: 8.8rem;
   height: 1.9rem;
 }
@@ -161,7 +159,7 @@ h4 {
   border-radius: 0.4rem;
   margin: 0 auto;
 }
-.greenLink {
+.green__link {
   color: var(--primary);
   font-family: var(--font-family2);
   font-weight: 400;
@@ -171,7 +169,7 @@ h4 {
   text-decoration: none;
 }
 /* ---Log in button--- */
-.buttonLogin {
+.button__login {
   width: 28.8rem;
   height: 4.7rem;
   font-family: var(--font-family2);
@@ -204,17 +202,17 @@ h4 {
   line-height: 1.9rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.line__2 {
+.line__two {
   width: 11.7rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
 }
 /* ---Login Nav-- */
-.formNav {
+.form__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.loginNav {
+.login__nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,7 +222,7 @@ h4 {
   width: 28.8rem;
   height: 4.7rem;
 }
-.buttonNav {
+.button__nav {
   color: var(--neutral9);
   font-family: var(--font-family);
   text-decoration: none;
@@ -256,8 +254,8 @@ h4 {
     display: flex;
     justify-content: space-between;
   }
-  .arrowLeft,
-  .arrowRight {
+  .arrow__left,
+  .arrow__right {
     margin-top: 0 auto;
     padding: 0;
     width: 4.3rem;
@@ -265,7 +263,7 @@ h4 {
     background-color: var(--neutral3);
     border-radius: 50%;
   }
-  .arrowLeft {
+  .arrow__left {
     background-image: url(../img/arrow\ left.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -273,7 +271,7 @@ h4 {
     margin-left: 2.4rem;
   }
 
-  .arrowRight {
+  .arrow__right {
     background-image: url(../img/arrow\ right.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -291,7 +289,7 @@ h4 {
     display: flex;
     justify-content: center;
   }
-  .contentBox {
+  .content__box {
     color: var(--neutral9);
     display: flex;
     flex-direction: column;
@@ -303,21 +301,21 @@ h4 {
     margin-top: 4rem;
   }
   h4,
-  .pLogin {
+  .paragraph__login {
     width: 36.2rem;
   }
   /* Form-Log-in */
-  .formInput,
-  .buttonLogin {
+  .form__input,
+  .button__login {
     width: 36.2rem;
     height: 4.7rem;
     border-radius: 0.4rem;
     border: 0;
   }
-  .inputArea {
+  .input__area {
     margin-top: 3.2rem;
   }
-  .inputIcon {
+  .input__icon {
     color: var(--primary2);
     position: absolute;
     width: 2.1rem;
@@ -327,7 +325,7 @@ h4 {
     transform: translateY(-50%);
   }
   /* end form login */
-  .loginNav {
+  .login__nav {
     width: 36.2rem;
     height: 4.7rem;
   }
@@ -337,7 +335,7 @@ h4 {
     justify-content: center;
     padding-top: 8.5rem;
   }
-  .pageNav {
+  .page__nav {
     width: 12rem;
     height: 2.7rem;
     border-radius: 1.8rem;
@@ -346,7 +344,7 @@ h4 {
     align-items: center;
     justify-content: space-evenly;
   }
-  .navPoint {
+  .nav__point {
     width: 0.7rem;
     height: 0.7rem;
     background-color: var(--neutral9);
