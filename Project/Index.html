@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
     <main>
@@ -86,10 +85,15 @@
             <!-- End-title-Section -->
 
             <!-- Login-Form -->
-            <form>
+            <form id="form" onsubmit="return validate()">
               <div class="input__area">
                 <label for="email"></label>
-                <input class="form__input" type="email" placeholder="Email" />
+                <input
+                  class="form__input"
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                />
               </div>
               <div class="input__wrapper">
                 <label for="password"></label>
@@ -98,6 +102,7 @@
                   class="form__input"
                   type="password"
                   placeholder="Password"
+                  id="password"
                 />
                 <svg
                   width="22"
@@ -129,8 +134,9 @@
               <a href="#">
                 <input
                   class="button__login"
-                  type="submit"
+                  type="button"
                   value="Log in"
+                  onclick="validate()"
                   placeholder="Log in"
                 />
               </a>
@@ -244,5 +250,6 @@
         </div>
       </nav>
     </main>
+    <script src="./js/login.js"></script>
   </body>
 </html>
