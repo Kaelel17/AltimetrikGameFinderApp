@@ -9,6 +9,9 @@
       "id": 2,
       "email": "pepita@test.com",
       "password": "1234"
+    },
+    {
+      "id": 3
     }
   ]
 }

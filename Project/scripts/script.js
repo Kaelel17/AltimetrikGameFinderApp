@@ -1,5 +1,5 @@
 //Log In
-User = {
+user = {
   email: "",
   password: "",
 };
@@ -7,34 +7,42 @@ User = {
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const form = document.querySelector("#form");
-const dataUsers = fetch(
-  "http://localhost:3000/users?email=" + email + "&password=" + pass
-);
+
 {
 }
 
 email.addEventListener("input", readText);
 password.addEventListener("input", readText);
+//  error
+const error = document.querySelector(".error");
 
 // e Form submit
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   // validate form
-  const { email, password } = User;
+  const { email, password } = user;
 
-  if (email === "" || password === "" || dataUsers === "") {
+  if (email === "" || password === "") {
     error.style.display = "block";
     return;
   }
   // submitting form
-  error.style.display = "none";
-  console.log("submitting form");
+
+  const response = await fetch(
+    "http://localhost:3000/users?email=" + email + "&password=" + password
+  );
+
+  const jresponse = await response.json();
+  console.log(jresponse);
+  if (jresponse.length !== 0) {
+    error.style.display = "none";
+    window.location.href = "home.html";
+    return;
+  }
 });
 function readText(e) {
-  User[e.target.id] = e.target.value;
+  user[e.target.id] = e.target.value;
 
-  // console.log(User);
+  // console.log(user);
 }
-//  error
-const error = document.querySelector(".error");
