@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Game-Finder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -85,24 +85,26 @@
             <!-- End-title-Section -->
 
             <!-- Login-Form -->
-            <form id="form" onsubmit="return validate()">
+            <form id="form">
               <div class="input__area">
                 <label for="email"></label>
                 <input
                   class="form__input"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="Email"
                 />
               </div>
+
               <div class="input__wrapper">
                 <label for="password"></label>
-
                 <input
                   class="form__input"
-                  type="password"
-                  placeholder="Password"
                   id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
                 />
                 <svg
                   width="22"
@@ -121,6 +123,10 @@
                 </svg>
               </div>
 
+              <div class="error">
+                <p class="error-p">wrong email or password</p>
+              </div>
+
               <div class="form__space">
                 <div class="text__center">
                   <input class="checkbox" type="checkbox" value="checkbox" />
@@ -134,9 +140,8 @@
               <a href="#">
                 <input
                   class="button__login"
-                  type="button"
+                  type="submit"
                   value="Log in"
-                  onclick="validate()"
                   placeholder="Log in"
                 />
               </a>
@@ -212,8 +217,8 @@
                   <a href="#" class="button__nav">Login whit Google</a>
                 </div>
               </nav>
-              <!-- End Form Nav -->
             </form>
+            <!-- End Form Nav -->
           </div>
         </section>
 
@@ -250,6 +255,6 @@
         </div>
       </nav>
     </main>
-    <script src="./js/login.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
